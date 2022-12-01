@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #0f1028;
 }
 
 html{
@@ -19,7 +20,7 @@ nav{
     height: auto;
 }
 :root{
-    --mycolor : #ff4f1f;
+    --mycolor : white;
 
 }
 
