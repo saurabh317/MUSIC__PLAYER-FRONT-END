@@ -14,27 +14,39 @@
 
           <!-- this is the left part of the nav bar -->
 
-          <div class="left-section-navbar">
-            <div class="brand_logo">
-              <img src="../ASSETS/img/sukoon.png" alt="logo of the music player "> 
-              <div class="brand_name">
-                <span>Sukoon</span>
-                <span>Music</span>
+          <div class="left-section-navbar main-container">
+            <div class="brand_logo sub-container">
+              <img src="../ASSETS/img/brand-logo.png" alt="logo of the music player "> 
+              <div class="brand_name sub-container1">
+                <span class="left-navbar-main-head">Sukoon</span>
+                <span class="left-navbar-second-head">Music</span>
               </div>
             </div>
-            <div class="navbar-fav">
-              <p>favorite</p>
+            <div class="navbar-fav sub-container2">
+              <button>favourite</button>
             </div>
           </div>
 
+
+
+
+     
+
             <!-- this is right part of the navbar -->
 
-          <div class="right-section-navbar">
-              <ul class="Lists">
-                <li><input type="search" name="search" class="List-search-bar"></li>
-                <li><ion-icon name="notifications-outline" class="List-icon"></ion-icon></li>
-                <li><img class="Lists-image" src="/ASSETS/img/akhil.jpg" alt="profile picture of user"></li>
-              </ul>
+          <div class="right-section-navbar main-container">
+            <div class="search-box-notification sub-container">
+              <ion-icon name="search-outline" class="List-icon-search"></ion-icon>
+              <input type="search" name="search" class="List-search-bar" placeholder="search-songs here">
+              <ion-icon name="mic-outline" class="List-icon-mic"></ion-icon>
+              <div class="notification">
+                <ion-icon name="notifications-outline" class="List-icon-notification"></ion-icon>
+              </div>
+            </div>
+            <div class="List-image">
+              <img class="Lists-image" src="/ASSETS/img/akhil.jpg" alt="profile picture of user">
+            </div>
+              
           </div>
         </div>
       </nav>
