@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/30de586aff.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/CSS/style.css" />
     <title>music-player</title>
   </head>
@@ -11,50 +21,265 @@
     <header>
       <nav>
         <div class="navbar">
-
           <!-- this is the left part of the nav bar -->
 
           <div class="left-section-navbar main-container">
             <div class="brand_logo sub-container">
-              <img src="../ASSETS/img/brand-logo.png" alt="logo of the music player "> 
+              <img
+                src="../ASSETS/img/logoMain.png"
+                alt="logo of the music player "
+              />
               <div class="brand_name sub-container1">
-                <span class="left-navbar-main-head">Sukoon</span>
+                <span class="left-navbar-main-head"
+                  ><strong>S</strong>ukoon</span
+                >
                 <span class="left-navbar-second-head">Music</span>
               </div>
             </div>
             <div class="navbar-fav sub-container2">
-              <button>favourite</button>
+              <button>Favourite</button>
             </div>
           </div>
 
-
-
-
-     
-
-            <!-- this is right part of the navbar -->
+          <!-- this is right part of the navbar -->
 
           <div class="right-section-navbar main-container">
             <div class="search-box-notification sub-container">
-              <ion-icon name="search-outline" class="List-icon-search"></ion-icon>
-              <input type="search" name="search" class="List-search-bar" placeholder="search-songs here">
+              <ion-icon
+                name="search-outline"
+                class="List-icon-search"
+              ></ion-icon>
+              <input
+                type="search"
+                name="search"
+                class="List-search-bar"
+                placeholder="search-songs here"
+              />
               <ion-icon name="mic-outline" class="List-icon-mic"></ion-icon>
               <div class="notification">
-                <ion-icon name="notifications-outline" class="List-icon-notification"></ion-icon>
+                <ion-icon
+                  name="notifications-outline"
+                  class="List-icon-notification"
+                ></ion-icon>
               </div>
             </div>
             <div class="List-image">
-              <img class="Lists-image" src="/ASSETS/img/akhil.jpg" alt="profile picture of user">
+              <img
+                class="Lists-image"
+                src="/ASSETS/img/akhil.jpg"
+                alt="profile picture of user"
+              />
             </div>
-              
           </div>
         </div>
       </nav>
     </header>
 
+    <!-- this is the hero part -->
 
+    <section class="hero">
+      <div class="hero-primary">
+        <div class="hero-image-main">
+          <img src="/ASSETS/img/1.jpg" alt="" />
+        </div>
+        <div class="hero-text-main">
+          <h1 class="heading-primary">On My way</h1>
+          <p class="description-primary">American Song</p>
+          <p class="description-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            fugit nemo obcaecati voluptatibus dignissimos mollitia aperiam atque
+            maiores, consectetur laborum suscipit autem impedit, quae cumque
+            iste ad, nam tempore et!
+          </p>
+          <button class="play-btn btnn">PlayAll</button>
+          <button class="follow-btn btnn">Follow</button>
+          <p class="final-text">247|128 Album</p>
+        </div>
+      </div>
+      <div class="hero-secondary">
+        <div class="hero-head">
+          <h1 class="hero-sec-head">Similar Artists</h1>
+          <button class="hero-sec-para btnn">view All</button>
+        </div>
+        <div class="hero-sec-cards">
+          <div class="hero-sec-card">
+            <img src="/ASSETS/img/4.jpg" alt="" />
+            <div class="music-description">
+              <h3 class="music-name">High on</h3>
+              <p class="music-para">Pop Band</p>
+            </div>
+            <div class="control">
+              <ion-icon name="more" class="control-icon"></ion-icon>
+              <p>4:44</p>
+            </div>
+          </div>
 
+          <div class="hero-sec-card">
+            <img src="/ASSETS/img/4.jpg" alt="" />
+            <div class="music-description">
+              <h3 class="music-name">High on</h3>
+              <p class="music-para">Pop Band</p>
+            </div>
+            <div class="control">
+              <ion-icon name="more" class="control-icon"></ion-icon>
+              <p>4:44</p>
+            </div>
+          </div>
 
+          <div class="hero-sec-card">
+            <img src="/ASSETS/img/4.jpg" alt="" />
+            <div class="music-description">
+              <h3 class="music-name">High on</h3>
+              <p class="music-para">Pop Band</p>
+            </div>
+            <div class="control">
+              <ion-icon name="more" class="control-icon"></ion-icon>
+              <p>4:44</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- this is  the main part -->
+
+    <section class="main hero">
+      <div class="main-content">
+        <div class="main-songs">
+          <h1>01</h1>
+          <div class="main-sec-card">
+            <img src="/ASSETS/img/4.jpg" alt="" />
+            <div class="music-description">
+              <h3 class="music-name">High on</h3>
+              <p class="music-para">Pop Band</p>
+            </div>
+            <div class="control">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-plus"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-songs">
+          <h1>02</h1>
+          <div class="main-sec-card">
+            <img src="/ASSETS/img/4.jpg" alt="" />
+            <div class="music-description">
+              <h3 class="music-name">High on</h3>
+              <p class="music-para">Pop Band</p>
+            </div>
+            <div class="control">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-plus"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-songs">
+          <h1>03</h1>
+          <div class="main-sec-card">
+            <img src="/ASSETS/img/4.jpg" alt="" />
+            <div class="music-description">
+              <h3 class="music-name">High on</h3>
+              <p class="music-para">Pop Band</p>
+            </div>
+            <div class="control">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-plus"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-songs">
+          <h1>04</h1>
+          <div class="main-sec-card">
+            <img src="/ASSETS/img/4.jpg" alt="" />
+            <div class="music-description">
+              <h3 class="music-name">High on</h3>
+              <p class="music-para">Pop Band</p>
+            </div>
+            <div class="control">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-plus"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-songs">
+          <h1>05</h1>
+          <div class="main-sec-card">
+            <img src="/ASSETS/img/4.jpg" alt="" />
+            <div class="music-description">
+              <h3 class="music-name">High on</h3>
+              <p class="music-para">Pop Band</p>
+            </div>
+            <div class="control">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-plus"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-songs">
+          <h1>06</h1>
+          <div class="main-sec-card">
+            <img src="/ASSETS/img/4.jpg" alt="" />
+            <div class="music-description">
+              <h3 class="music-name">High on</h3>
+              <p class="music-para">Pop Band</p>
+            </div>
+            <div class="control">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-plus"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-secondary">
+        <div class="hero-head">
+          <h1 class="hero-sec-head">Recently added</h1>
+          <button class="hero-sec-para btnn">view All</button>
+        </div>
+        <div class="hero-sec-cards">
+          <div class="hero-sec-card">
+            <img src="/ASSETS/img/4.jpg" alt="" />
+            <div class="music-description">
+              <h3 class="music-name">High on</h3>
+              <p class="music-para">Pop Band</p>
+            </div>
+            <div class="control">
+              <ion-icon name="more" class="control-icon"></ion-icon>
+              <p>4:44</p>
+            </div>
+          </div>
+
+          <div class="hero-sec-card">
+            <img src="/ASSETS/img/4.jpg" alt="" />
+            <div class="music-description">
+              <h3 class="music-name">High on</h3>
+              <p class="music-para">Pop Band</p>
+            </div>
+            <div class="control">
+              <ion-icon name="more" class="control-icon"></ion-icon>
+              <p>4:44</p>
+            </div>
+          </div>
+
+          <div class="hero-sec-card">
+            <img src="/ASSETS/img/4.jpg" alt="" />
+            <div class="music-description">
+              <h3 class="music-name">High on</h3>
+              <p class="music-para">Pop Band</p>
+            </div>
+            <div class="control">
+              <ion-icon name="more" class="control-icon"></ion-icon>
+              <p>4:44</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script
       type="module"

@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #0f1028;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 html{
@@ -10,8 +12,7 @@ html{
     color: #fff;
 }
 body{
-    background-color: #2e2e2e;
-    /* color: var(--mycolor); */
+    /* background-color: #2e2e2e; */
 }
 
 nav{
@@ -19,13 +20,15 @@ nav{
     width: 100%;
     height: auto;
 }
+
 :root{
     --mycolor : white;
-
+    --div-color:#181b42;
 }
 
 /****************************************/
           /**reusable codes**/
+/****************************************/
 
 
 
@@ -35,57 +38,74 @@ nav{
     align-items: center;
     min-width: 25rem;
     height: auto;
-
 }
 
 .sub-container{
     height: auto;
     display: flex;
     align-items: center;
+}
 
+.btnn{
+    border: none;
+    outline: none;
+    color: #eee;
+    width: 12rem;
+    height: 3rem;
+    margin:5rem 1rem 1rem 0rem; 
 }
 
 /****************************************/
 /**left section of navbar styling**/
+/****************************************/
 
 .left-section-navbar{
-    gap: 15rem;
+    gap: 17rem;
 }
 
 .navbar{
     width: 100%;
     height: auto;
-    /* padding: 1rem 0rem; */
+    padding: 1rem  0rem 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .brand_logo {
-    width: 9rem;
+    width: 12rem;
 }
 
 .brand_name {
+    display: flex;
+    margin-left: -10px;
+    flex-direction: column;
     font-size: 2rem;
 }
 
 .brand_logo img {
     width: 100%;
-
 }
 
 .left-navbar-main-head{
+    margin-top: -10px;
     color: var(--mycolor);
 }
 
+.left-navbar-main-head strong{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
 .left-navbar-second-head{
+    margin-top: -8px;
     font-weight: bold;
     color: var(--mycolor);
 }
 
 .navbar-fav button{
     outline: none;
-    background-color: #1e1e1e;
+    background-color: transparent;
     color:var(--mycolor);
     border: none;
     font-size: 2rem;
@@ -94,39 +114,34 @@ nav{
 
 /****************************************/
 /**Right section of navbar styling**/
+/****************************************/
 
 .right-section-navbar{
-    gap: 5rem;
+    gap: 4rem;
 }
 
 .search-box-notification{
     height: auto;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .List-search-bar{
-    width: 20rem;
+    width: 25rem;
     height: 3rem;
     text-align: center;
     border-radius: 10px;
-    border: 1px solid var(--mycolor);
-    background-color: transparent;
+    background-color: #16193f;
     caret-color:var(--mycolor) ;
     outline: none;
-    outline-color:var(--mycolor) ;
     color: var(--mycolor);
-    
-
 }
 
 .List-search-bar:focus::placeholder{
     color: transparent;
 }
 
-
-
-
 .List-icon-search{
+    background-color: #16193f;
     color: var(--mycolor);
     font-size: 2rem;
     position: relative;
@@ -134,6 +149,7 @@ nav{
 }
 
 .List-icon-mic{
+    background-color: #16193f;
     color: var(--mycolor);
     font-size: 2rem;
     position: relative;
@@ -153,6 +169,174 @@ nav{
     width: 60%;
     border-radius: 50%;
 }
+
+/****************************************/
+/**hero section styling having image**/
+/****************************************/
+
+
+.hero{
+    height: auto;
+    padding: 3rem 10rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+}
+
+.hero-primary{
+    width: 100%;
+    background-color:var(--div-color);
+    display: flex;
+    gap: 2rem;
+}
+
+.hero-image-main{
+    width: 40%;
+    min-height: 50vh;
+}
+
+.hero-text-main{
+    width: 60%;
+    background-color:var(--div-color);
+}
+
+.hero-image-main img{
+    width: 100%;
+    height: 100%;
+}
+
+.heading-primary{
+    background-color:var(--div-color);
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+
+.description-primary{
+    background-color:var(--div-color);
+    color: #999;
+    font-size: 2rem;
+}
+
+.description-secondary{
+    background-color:var(--div-color);
+    color: #999;
+    font-size: 1.2rem;
+}
+
+.play-btn{
+    font-weight: bold;
+    background-image: linear-gradient(to right, #3805c4 51%, #9209aa 100%);
+}
+
+.follow-btn{
+    background-color:var(--div-color);
+    color:rgb(205, 197, 197);
+    font-weight: bold;
+}
+
+.final-text{
+    background-color:var(--div-color);
+    color: #999;
+}
+
+/****************************************/
+/**hero section styling having simliar lists**/
+/****************************************/
+
+
+.hero-head{
+    width: 100%;
+    background-color:var(--div-color);
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+
+.hero-sec-head{
+    margin-top: 2rem;
+    background-color:var(--div-color);
+}
+
+.hero-sec-para{
+    margin-top: 2rem; 
+    background-color:var(--div-color);
+}
+
+
+.hero-secondary{
+    gap: 2rem;
+    width: 100%;
+    overflow-y: hidden;
+    
+}
+
+.hero-secondary::-webkit-scrollbar{
+    display: none;
+}
+
+.hero-sec-cards{
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero-sec-card{
+    display: flex;
+    gap: 25%;
+}
+
+.hero-sec-card img{
+    width: 20%;
+}
+
+
+/****************************************/
+/**hero section styling having simliar lists**/
+/****************************************/
+
+.main-songs{
+    display: flex;
+    gap: 2rem;
+    /* border: 1px solid red; */
+}
+
+.main-sec-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.main-sec-card img{
+    width: 10%;
+}
+
+.control{
+    width: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.control i{
+    font-size: 2rem;
+}
+
+ .main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+} 
+
+.main-songs:hover{
+    
+    color: #333;
+}
+
+
+
+
+
+
 
 
 
