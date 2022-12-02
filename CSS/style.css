@@ -134,6 +134,7 @@ nav{
     background-color: #16193f;
     caret-color:var(--mycolor) ;
     outline: none;
+    border: none;
     color: var(--mycolor);
 }
 
@@ -272,6 +273,10 @@ nav{
     
 }
 
+.music-description{
+    width: 11rem;
+}
+
 
 
 .hero-sec-cards{
@@ -283,7 +288,7 @@ nav{
 
 .hero-sec-card{
     display: flex;
-    gap: 25%;
+    gap: 20%;
 }
 
 .hero-sec-card img{
@@ -345,29 +350,93 @@ nav{
 /**hero section styling having simliar lists**/
 /****************************************/
 
-.foot-sec{
-    background-color: #333;
+footer{
+    position: fixed;
+    bottom: 0;
 }
 
+
+
+.foot-sec{
+    width: 100vw;
+    
+
+    background-color: #333;
+    padding: 1rem 10rem;
+    /* display: flex; */
+}
 .main-foot{
     display: flex;
+    justify-content:space-between ;
+}
+
+.inside-main-foot{
+    display: flex;
+    width: 5rem;
+    height: 5rem;
     gap: 1rem;
-    padding: 1rem 10rem;
-    border: 1px solid red;
     background-color: #333;
 }
 
+.icons{
+    position: relative;
+    left: 38%;
+    display: flex;
+    gap: 2rem;
+}
+
+.icons i{
+    font-size: 2rem;
+}
+
+
 .foot-icon i{
+    margin-top: 1rem;
     font-size: 2rem;
 }
 
 .foot-text{
+    
     background-color: #333;
 }
 
-.main-foot img{
-    width: 5%;
+.foot-text h2{
+    width: 10rem;
+} 
+
+
+.inside-main-foot img{
+    width: 100%;
     border-radius: 50%;
+}
+
+.middle-foot{
+    margin-top: 0.8rem;
+    position: relative;
+    left: 5%;
+}
+
+.empty-bar{
+    width: 25rem;
+    height: 2px;
+    border: 2px solid #eee;
+}
+
+.music-bar{
+    display: flex;
+    margin-top:1rem; 
+}
+
+.timer{
+    margin:-5px 15px ;
+}
+
+.volume{
+    margin-top: 2rem;
+}
+.volume i{
+    font-size: 2rem;
+    margin: ;
 }
 
 
