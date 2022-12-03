@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: #0f1028; */
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
@@ -12,7 +11,8 @@ html{
     color: #fff;
 }
 body{
-    /* background-color: #2e2e2e; */
+    width:fit-content;
+    height: 100vh;
 }
 
 nav{
@@ -269,15 +269,13 @@ nav{
 .hero-secondary{
     gap: 2rem;
     width: 100%;
-    overflow-y: hidden;
-    
+    overflow-y: hidden; 
 }
+
 
 .music-description{
     width: 11rem;
 }
-
-
 
 .hero-sec-cards{
     height: 25rem;
@@ -295,6 +293,7 @@ nav{
     width: 20%;
 }
 
+
 .music-para{
     color: #999;
 }
@@ -307,7 +306,6 @@ nav{
 .main-songs{
     display: flex;
     gap: 2rem;
-
 }
 
 .main-sec-card{
@@ -359,12 +357,10 @@ footer{
 
 .foot-sec{
     width: 100vw;
-    
-
     background-color: #333;
     padding: 1rem 10rem;
-    /* display: flex; */
 }
+
 .main-foot{
     display: flex;
     justify-content:space-between ;
@@ -380,7 +376,7 @@ footer{
 
 .icons{
     position: relative;
-    left: 38%;
+    left: 30%;
     display: flex;
     gap: 2rem;
 }
@@ -413,13 +409,14 @@ footer{
 .middle-foot{
     margin-top: 0.8rem;
     position: relative;
-    left: 5%;
+    left: 10%;
 }
 
 .empty-bar{
     width: 25rem;
-    height: 2px;
-    border: 2px solid #eee;
+    height: 1px;
+    border: 3px solid #eee;
+    background-color: #eee;
 }
 
 .music-bar{
@@ -427,8 +424,33 @@ footer{
     margin-top:1rem; 
 }
 
+.bar{
+    border: 3px solid var(--div-color);
+    background-color: var(--div-color);
+    height: 1px;
+    width: 10rem;
+    position: relative;
+    right: 55%;
+}
+
+.pointer{
+    height: 1px;
+    width: 1px;
+    border: 5px solid var(--div-color);
+    background-color: var(--div-color);
+    border-radius: 50%;
+    position: relative;
+    right: 56%;
+    margin-top: -3px;
+}
+
 .timer{
     margin:-5px 15px ;
+}
+
+.add{
+    position: relative;
+    right: 26%;
 }
 
 .volume{
@@ -436,9 +458,59 @@ footer{
 }
 .volume i{
     font-size: 2rem;
-    margin: ;
+  
 }
 
+/****************************************/
+/**media query for responsive design**/
+/****************************************/
+
+
+
+ @media screen and (max-width: 1000px) {
+
+    .footer{
+        position: fixed;
+        bottom: 0;
+        width: auto;
+    }
+    
+    
+    
+    .foot-sec{
+        width:fit-content;
+        height:9rem;
+        
+        /* background-color: red; */
+        padding: 1rem 10rem;
+        display: flex;
+    }
+
+    .main-foot{
+        padding: 1rem;
+        gap: 4rem;
+    }
+
+    .foot-icon{
+        left: -48%;
+        position: relative;
+        top: -12%;
+    }
+
+    .volume{
+        position: relative;
+        top: -23%;
+        left: -2%;
+    }
+
+    #volume-icon2{
+        display: none;
+    }
+
+    .middle-foot{
+        left: 13%;
+    }
+   
 
 
 
