@@ -5,3 +5,6 @@
 <li>Based on pure html and css only </li>
 <img src="https://user-images.githubusercontent.com/113172105/211138782-f304407e-776e-40be-919e-51bb9546f732.gif" width="250" height="200"/>
 </ul>
+
+# PIC GALARY
+updating soon...
